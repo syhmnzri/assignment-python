@@ -16,11 +16,11 @@ def display(delPlateNum, total):
     print("---  Thankyou!  ---")
     print("\n")
     
-    # myfile= open("receipt.txt","w")
-    # myfile.write("----PAYMENT INFO----")
-    # myfile.write("Plate number: "+delPlateNum)
-    # myfile.write("Total price: RM",total)
-    # myfile.write("\n")
-    # myfile.write("---  Thankyou!  ---")
-    # myfile.close
+    myfile= open("receipt.txt","w")
+    myfile.write("----PAYMENT INFO----\n")
+    myfile.write("Plate number: "+delPlateNum+"\n")
+    myfile.write("Total price: RM"+str(total)+"\n")
+    myfile.write("\n")
+    myfile.write("---  Thankyou!  ---")
+    myfile.close
     

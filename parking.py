@@ -3,10 +3,10 @@
 import myModule #import iur self made module
 import turtle   #import turtle library
 
-print("Welcome to Parking Centre!") 
+print("Welcome to Parking Centre!")     #print introduction and welcome
 print("--------Price Rate--------")
 print("First hours ... RM1")
-print("Next hours  ... RM1.50")
+print("Next hours  ... RM1.50\n")
 
 #turtle for displaying welcome
 fontsize = turtle.Turtle()
@@ -150,7 +150,7 @@ class customer(user):
 
 #create new function to display number of parking left in each section
 def availibility():                                      
-    print("-----Parking Available-----")
+    print("\n-----Parking Available-----")
     print("Section A: ",parking['A'])
     print("Section B: ",parking['B'])
     print("Section C: ",parking['C'])
@@ -217,6 +217,7 @@ while(True):
         myfile.close()                                   #close file carsPN.txt
         print("Cars entered.")                           
         print(carlist)                                   #print tuple 'carlist'
+        print("\n")
     
     #to display wrong input and ask user to enter again correctly
     elif status!= 0:

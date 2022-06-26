@@ -61,13 +61,14 @@ print(test)
 for x in test:
     if x=="PGE5527":
         print("yes")
+
 # del test["PGE5526"]
 # print(test)
-# myfile= open("test.txt","w")
+myfile= open("test.txt","w")
 
-# for x,y in test.items():
-#     myfile.write("%s:%s\n"%(x,y))
+for x,y in test.items():
+    myfile.write("%s:%s\n"%(x,y))
 
-# myfile.close()
+myfile.close()
 
 

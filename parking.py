@@ -3,95 +3,99 @@
 import myModule #import iur self made module
 import turtle   #import turtle library
 
-# print("Welcome to Parking Centre!") 
+print("Welcome to Parking Centre!") 
+print("--------Price Rate--------")
+print("First hours ... RM1")
+print("Next hours  ... RM1.50")
 
-# fontsize = turtle.Turtle()
-# MyCar = turtle.Turtle()
-# t = turtle.Turtle()
+#turtle for displaying welcome
+fontsize = turtle.Turtle()
+MyCar = turtle.Turtle()
+t = turtle.Turtle()
 
-# t.fillcolor('yellow')
-# t.begin_fill()
-# t.speed(50)
+t.fillcolor('yellow')
+t.begin_fill()
+t.speed(50)
 
-# t.penup()
-# t.forward(200)    #Forward turtle by 150 units
-# t.left(90)        #Turn turtle by 90 degree
-# t.forward(250)    #Forward turtle by 80 units
-# t.left(90)        #Turn turtle by 90 degree
-# t.forward(400)    #Forward turtle by 150 units
-# t.left(90)        #Turn turtle by 90 degree
-# t.forward(250)    #Forward turtle by 80 units
-# t.left(90)        #Turn turtle by 90 degree
-# t.forward(200)
-# t.pendown()
-# t.end_fill()
-# t.hideturtle()
+t.penup()
+t.forward(200)    #Forward turtle by 150 units
+t.left(90)        #Turn turtle by 90 degree
+t.forward(250)    #Forward turtle by 80 units
+t.left(90)        #Turn turtle by 90 degree
+t.forward(400)    #Forward turtle by 150 units
+t.left(90)        #Turn turtle by 90 degree
+t.forward(250)    #Forward turtle by 80 units
+t.left(90)        #Turn turtle by 90 degree
+t.forward(200)
+t.pendown()
+t.end_fill()
+t.hideturtle()
 
-# fontsize.color('black')
-# fontsize.write(" \nWELCOME\n TO THE\n PARKING!!", font=("Stencil", 48, "bold"), align= 'center')
-# fontsize.hideturtle()
+fontsize.color('black')
+fontsize.write(" \nWELCOME\n TO THE\n PARKING!!", font=("Stencil", 48, "bold"), align= 'center')
+fontsize.hideturtle()
 
-# MyCar.speed(50)
-# # code for drawing rectangular upper body
-# MyCar.color('black')
-# MyCar.fillcolor('red')
-# MyCar.penup()
-# MyCar.goto(0,-105)
-# MyCar.pendown()
-# MyCar.begin_fill()
-# MyCar.forward(300)
-# MyCar.left(90)
-# MyCar.forward(50)
-# MyCar.left(90)
-# MyCar.forward(300)
-# MyCar.left(90)
-# MyCar.forward(50)
-# MyCar.end_fill()
+MyCar.speed(50)
+#code for drawing rectangular upper body
+MyCar.color('black')
+MyCar.fillcolor('red')
+MyCar.penup()
+MyCar.goto(0,-105)
+MyCar.pendown()
+MyCar.begin_fill()
+MyCar.forward(300)
+MyCar.left(90)
+MyCar.forward(50)
+MyCar.left(90)
+MyCar.forward(300)
+MyCar.left(90)
+MyCar.forward(50)
+MyCar.end_fill()
 
-# # code for drawing window and roof
-# MyCar.penup()
-# MyCar.goto(100, -55)
-# MyCar.pendown()
-# MyCar.setheading(45)
-# MyCar.forward(70)
-# MyCar.setheading(0)
-# MyCar.forward(100)
-# MyCar.setheading(-45)
-# MyCar.forward(70)
-# MyCar.setheading(90)
-# MyCar.penup()
-# MyCar.goto(200,-55)
-# MyCar.pendown()
-# MyCar.forward(49.50)
+#code for drawing window and roof
+MyCar.penup()
+MyCar.goto(100, -55)
+MyCar.pendown()
+MyCar.setheading(45)
+MyCar.forward(70)
+MyCar.setheading(0)
+MyCar.forward(100)
+MyCar.setheading(-45)
+MyCar.forward(70)
+MyCar.setheading(90)
+MyCar.penup()
+MyCar.goto(200,-55)
+MyCar.pendown()
+MyCar.forward(49.50)
 
-# # code for drawing two tyres
-# MyCar.penup()
-# MyCar.goto(70, -105)
-# MyCar.pendown()
-# MyCar.color('black')
-# MyCar.fillcolor('black')
-# MyCar.begin_fill()
-# MyCar.circle(20)
-# MyCar.end_fill()
-# MyCar.penup()
-# MyCar.goto(280, -105)
-# MyCar.pendown()
-# MyCar.color('black')
-# MyCar.fillcolor('black')
-# MyCar.begin_fill()
-# MyCar.circle(20)
-# MyCar.end_fill()
+#code for drawing two tyres
+MyCar.penup()
+MyCar.goto(70, -105)
+MyCar.pendown()
+MyCar.color('black')
+MyCar.fillcolor('black')
+MyCar.begin_fill()
+MyCar.circle(20)
+MyCar.end_fill()
+MyCar.penup()
+MyCar.goto(280, -105)
+MyCar.pendown()
+MyCar.color('black')
+MyCar.fillcolor('black')
+MyCar.begin_fill()
+MyCar.circle(20)
+MyCar.end_fill()
 
-# #code for the road
-# MyCar.penup()
-# MyCar.goto(20, -125)
-# MyCar.pendown()
-# MyCar.left(90)
-# MyCar.backward(280)
+#code for the road
+MyCar.penup()
+MyCar.goto(20, -125)
+MyCar.pendown()
+MyCar.left(90)
+MyCar.backward(280)
 
-# MyCar.hideturtle()
+MyCar.hideturtle()
 
-# turtle.done()
+turtle.done()
 
 parking= {'A':10, 'B':10, 'C':10}                       #create dictionary for parking section availibility (A,B,C)
 carSection= {}                                          #create dictionary for cars and its respective section
@@ -162,8 +166,9 @@ while(True):
     
     #To enter parking
     if status== 1:
-        section= input("Choose section (A/B/C):")
         plateNum= input("Enter plate number:")
+        section= input("Choose section (A/B/C):")
+        print("\n")
         
         #to make sure that user is entering the right choice
         if section=='A' or section=='B' or section=='C':
@@ -176,32 +181,31 @@ while(True):
     elif status== 2:          
         delPlateNum= input("Enter your registered plate number:")
         
-        if y==delPlateNum or x==delPlateNum:              #to update the cars inside carsPN.txt
-            for y in cars:
-                registerPN= open("carsPN.txt","w")        #open file carsPN.txt
-                cars.remove(delPlateNum)                  #remove entered plate number
+        for z in cars:
+            if z== delPlateNum:                             #to update the cars inside carsPN.txt
                 
-                for x in cars:                            #to rewrite the latest cars is list 'cars' into carsPN.txt
+                registerPN= open("carsPN.txt","w")          #open file carsPN.txt
+                cars.remove(delPlateNum)                    #remove entered plate number
+                
+                for x in cars:                              #to rewrite the latest cars is list 'cars' into carsPN.txt
                     registerPN.write(x+"\n")
-                registerPN.close()                        #close file carsPN.txt
+                registerPN.close()                          #close file carsPN.txt
 
-                hrs= int(input("Enter hours of parking: "))
                 updateParking= input("Enter your parking section (A/B/C):")
+                hrs= int(input("Enter hours of parking: "))
                 
                 customer.Exit(updateParking,hrs,delPlateNum) #call function customer.Exit()
                 
-        
-                for x in carSection:
-                    del carSection[delPlateNum]                 #delete cars entered by user from dictionary 'carSection'
-                    registerCS= open("cars&section.txt","w")    #open file cars&section.txt
-                    
-                    for key,value in carSection.items():        #insert all date inside dictionary 'carSection' into cars&section.txt
-                        registerCS.write("%s:%s\n"%(key,value))
+                del carSection[delPlateNum]                 #delete cars entered by user from dictionary 'carSection'
+                registerCS= open("cars&section.txt","w")    #open file cars&section.txt
                 
-                    registerCS.close()
+                for key,value in carSection.items():        #insert all date inside dictionary 'carSection' into cars&section.txt
+                    registerCS.write("%s:%s\n"%(key,value))
+            
+                registerCS.close()
                         
         else:
-            print("Your plate number is not in the record")
+            print("\nYour plate number is not in the record\n")
         
     #To display availibility of parking and display car entered
     elif status== 3:
